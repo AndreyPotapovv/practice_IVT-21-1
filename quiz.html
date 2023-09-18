@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<h1 align = "center">MATH QUIZ</h1>
+<p align = "center"> Выберите или напишите правильные ответы </p>
+<form action="calculate.php" method="post">
+    <br>
+    <p>Ваше имя</p>
+    <input type="text" name = "name">
+    <p>1. Сколько будет 2 + 2?</p>
+    <input type="radio" name="q1" value="incorrect"> 3<br>
+    <br>
+    <input type="radio" name="q1" value="correct"> 4<br>
+    <br>
+    <input type="radio" name="q1" value="incorrect"> 5<br>
+
+    <p>2. Какой корень из 9?</p>
+    <input type="radio" name="q2" value="incorrect"> 2<br>
+    <br>
+    <input type="radio" name="q2" value="correct"> 3<br>
+    <br>
+    <input type="radio" name="q2" value="incorrect"> 1<br>
+
+    <p>3. Сколько будет 5 * 6?</p>
+    <input type="radio" name="q3" value="correct"> 30<br>
+    <br>
+    <input type="radio" name="q3" value="incorrect"> 25<br>
+    <br>
+    <input type="radio" name="q3" value="incorrect"> 35<br>
+
+    <p>4. Какой периметр квадрата со стороной 8?</p>
+    <input type="radio" name="q4" value="incorrect"> 16<br>
+    <br>
+    <input type="radio" name="q4" value="correct"> 32<br>
+    <br>
+    <input type="radio" name="q4" value="incorrect"> 64<br>
+
+    <p>5. Сколько будет 10 / 2?</p>
+    <input type="radio" name="q5" value="correct"> 5<br>
+    <br>
+    <input type="radio" name="q5" value="incorrect"> 2<br>
+    <br>
+    <input type="radio" name="q5" value="incorrect"> 8<br>
+
+    <br>
+    <input type="submit" value="Подсчитать результат" onclick="calculateScore()">
+    <input type="button" value="Сбросить" onclick="clearAnswers()">
+</form>
+<p id="result"></p>
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
